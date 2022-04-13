@@ -38,8 +38,22 @@ gcloud:
   performance-metrics: true
 
   test-targets:
-    - package org.mozilla.focus.activity
-    - package org.mozilla.focus.privacy
+    - package org.mozilla.focus.activity.AddToHomescreenTest#addPageToHomeScreenTest
+    - package org.mozilla.focus.activity.AddToHomescreenTest#noNameShortcutTest
+    - package org.mozilla.focus.activity.EnhancedTrackingProtectionSettingsTest#blockSocialTrackersTest
+    - package org.mozilla.focus.activity.EnhancedTrackingProtectionSettingsTest#blockOtherContentTrackersTest
+    - package org.mozilla.focus.activity.EraseBrowsingDataTest#notificationEraseAndOpenButtonTest
+    - package org.mozilla.focus.activity.SafeBrowsingTest#unblockSafeBrowsingTest
+    - package org.mozilla.focus.activity.SitePermissionsTest
+    - package org.mozilla.focus.activity.SearchTest#enableSearchSuggestionOnFirstRunTest
+    - package org.mozilla.focus.activity.SearchTest#testSearchBarShowsSearchTermOnEdit
+    - package org.mozilla.focus.activity.SettingsGeneralTest#changeThemeTest
+    - package org.mozilla.focus.activity.SettingsPrivacyTest#verifyCookiesAndSiteDataItemsTest
+    - package org.mozilla.focus.activity.SettingsTest#verifyGeneralSettingsMenuTest
+    - package org.mozilla.focus.activity.URLAutocompleteTest#disableAutocompleteForCustomSiteTest
+    - package org.mozilla.focus.activity.SwitchContextTest#switchFromSettingsToFocusTest
+    - package org.mozilla.focus.screenshots.HomeScreenScreenshots#takeScreenshotShortCutsHomeScreenopenWebsiteFocus
+    - package org.mozilla.focus.screenshots.HomeScreenScreenshots#openWebsiteFocus
 
   device:
    - model: Pixel3
